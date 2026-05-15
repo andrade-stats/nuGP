@@ -173,7 +173,7 @@ def run(dataset, args):
                 assert(args.likelihood == "Gaussian" and args.reduced_rank is None)
                 gpModel, all_losses = count_GPs.trainCountGP(args, X_train, y_train, covFunc_name = args.covFunc, likelihood_name = args.likelihood, gamma = None, useVariationalApprox = False)
             elif args.method == "gammaDivergence":
-                assert(args.likelihood == "Gaussian") # GPyTorch implementation only support Gaussian likelihood for gamma-divergence
+                assert(args.likelihood == "Gaussian") # GPyTorch implementation only supports Gaussian likelihood for gamma-divergence
                 gpModel, all_losses = count_GPs.trainCountGP(args, X_train, y_train, covFunc_name = args.covFunc, likelihood_name = "Gaussian", gamma = args.gamma, useVariationalApprox = True)
             elif args.method == "OLRE":
                 gpModel, all_losses, all_weights[foldId] = weightedLikelihoodGP.trainOLRELikelihoodGP_full(args, X_train, y_train, covFunc_name = args.covFunc, likelihood_name = args.likelihood)
@@ -424,7 +424,7 @@ if __name__ == '__main__':
     if args.method == "trimmedLB_CV" or args.method == "trimmedLB":
         assert(args.pre_specified_nu is None)
         assert((args.step == 0.01 and args.start == 0.0) or (args.step == 0.02 and (args.start == 0.0 or args.start == 0.01)))
-        # run nu-GP for different nu values, the final nu final value will then be selected in create_summary_data.py by calling get_refined_nu from nu_estimation.py
+        # run nu-GP for different nu values, the final nu value will then be selected in create_summary_data.py by calling get_refined_nu from nu_estimation.py
         all_nu_values = np.arange(start = args.start, stop = 0.21, step=args.step)
         for nu in all_nu_values:
             args_cp = copy.deepcopy(args)

@@ -1,7 +1,7 @@
 
 # Robust Variational Gaussian Process Regression for Count Data with the Trimmed Marginal Likelihood
 
-Implementation of the Trimmed Marginal Likelihood GP for regression for count data as proposed in "Robust Variational Gaussian Process Regression for Count Data with the Trimmed Marginal Likelihood" (under submission).
+Implementation of the Trimmed Marginal Likelihood GP for regression of count data as proposed in [Robust Variational Gaussian Process Regression for Count Data with the Trimmed Marginal Likelihood](https://link.springer.com/article/10.1007/s11222-026-10895-9).
 
 
 ## Requirements
@@ -112,5 +112,6 @@ python create_plots.py
 
 ## Citation
 
-ARTICLE UNDER REVIEW - CODE WILL BE PUBLICLY RELEASED AFTER ACCEPTANCE
+If you are using part of the code in your work please cite the following paper:
 
+Andrade, Daniel. "Robust Variational Gaussian Process Regression for Count Data with the Trimmed Marginal Likelihood." Statistics and Computing  36, 139 (2026): https://doi.org/10.1007/s11222-026-10895-9
