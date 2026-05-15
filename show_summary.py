@@ -60,10 +60,10 @@ if __name__ == '__main__':
         print("*************** SCRPS *****************")
 
     # show only results for porposed method
-    ALL_METHODS = [("NB", "trimmedLB_inc")]
+    # ALL_METHODS = [("NB", "trimmedLB_inc")]
 
     # use this for getting full table:
-    # ALL_METHODS = [("NB", "trimmedLB_inc"), ("NB", "wGP"), ("RobustPoisson", "variationalApprox"), ("NB", "variationalApproxPostHocTrimming"), ("Poisson", "OLRE"), ("Poisson", "variationalApprox"), ("NB", "variationalApprox")]
+    ALL_METHODS = [("NB", "trimmedLB_inc"), ("NB", "wGP"), ("RobustPoisson", "variationalApprox"), ("NB", "variationalApproxPostHocTrimming"), ("Poisson", "OLRE"), ("Poisson", "variationalApprox"), ("NB", "variationalApprox")]
     
     previous_dataset = ""
 

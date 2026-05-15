@@ -89,23 +89,22 @@ Determine outlier ratio (using Algorithm 2 and 3) and create summary data by run
 python create_summary_data.py --noise_type=lowest --true_outlier_ratio=0.05
 ``` 
 
-Shows negative log-likelihood (nll) results:
+Shows summary of negative log-likelihood (nll) results (requires results of all methods on all datasets):
 ```bash
 python show_summary.py
 ``` 
 
-Shows scaled continuous ranked probability scores (SCRPS):
+Shows scaled continuous ranked probability scores (SCRPS) (requires results of all methods on all datasets):
 ```bash
 python show_summary.py --scrps 
 ```
 
-Shows outlier estimates:
+Shows outlier estimates (requires results of all methods on all datasets):
 ```bash
 python show_outlier_estimates.py
 ```
 
-
-Plots the difference of a model's predictive cumulative distribution function (CDF) and the empirical CDF:
+Plots the difference of a model's predictive cumulative distribution function (CDF) and the empirical CDF (requires results of all methods on all datasets):
 ```bash
 python create_plots.py
 ```
