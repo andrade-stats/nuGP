@@ -59,7 +59,11 @@ if __name__ == '__main__':
     else:
         print("*************** SCRPS *****************")
 
-    ALL_METHODS = [("NB", "trimmedLB_inc"), ("NB", "wGP"), ("RobustPoisson", "variationalApprox"), ("NB", "variationalApproxPostHocTrimming"), ("Poisson", "OLRE"), ("Poisson", "variationalApprox"), ("NB", "variationalApprox")]
+    # show only results for porposed method
+    ALL_METHODS = [("NB", "trimmedLB_inc")]
+
+    # use this for getting full table:
+    # ALL_METHODS = [("NB", "trimmedLB_inc"), ("NB", "wGP"), ("RobustPoisson", "variationalApprox"), ("NB", "variationalApproxPostHocTrimming"), ("Poisson", "OLRE"), ("Poisson", "variationalApprox"), ("NB", "variationalApprox")]
     
     previous_dataset = ""
 

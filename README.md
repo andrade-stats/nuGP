@@ -17,7 +17,7 @@ Implementation of the Trimmed Marginal Likelihood GP for regression of count dat
 ```bash
 conda create -n GPs python=3.12
 conda activate GPs
-pip3 install gpytorch
+pip3 install gpytorch matplotlib
 ```
 
 2. Create nessecary folders for saving pre-processed data and results
