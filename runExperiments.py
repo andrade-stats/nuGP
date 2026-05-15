@@ -65,7 +65,6 @@ def run(dataset, args):
     print("TOTAL NUMBER OF SAMPLES = ", NR_TRAINING_SAMPLES)
     print("PRE_SPECIFIED_NU = ", args.pre_specified_nu)
     
-    
     startTime = time.time()
 
     all_NLL = np.zeros(NUMBER_OF_FOLDS) * np.nan

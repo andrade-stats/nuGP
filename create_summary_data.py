@@ -82,9 +82,12 @@ if __name__ == '__main__':
 
     original_args = runExperiments.get_standard_settings()
     
-    # ALL_SETTINGS = [("Poisson", "variationalApprox"), ("Poisson", "OLRE"), ("RobustPoisson", "variationalApprox"), ("NB", "variationalApprox"), ("NB", "trimmedLB_inc"), ("NB", "wGP"), ("NB", "variationalApproxPostHocTrimming")]
-    ALL_SETTINGS = [("Poisson", "OLRE")]
+    # show only results for porposed method
+    ALL_SETTINGS = [("NB", "trimmedLB_inc")]
 
+    # use this for getting full table:
+    # ALL_SETTINGS = [("Poisson", "variationalApprox"), ("Poisson", "OLRE"), ("RobustPoisson", "variationalApprox"), ("NB", "variationalApprox"), ("NB", "trimmedLB_inc"), ("NB", "wGP"), ("NB", "variationalApproxPostHocTrimming")]
+    
     all_nll_results = []
     all_scrps_results = []
     
